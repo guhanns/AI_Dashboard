@@ -8,6 +8,7 @@ import {
   HelpOutline,
   ChevronLeft,
   ChevronRight,
+  AccountCircle,
 } from '@mui/icons-material';
 import { Button } from "../ui/button";
 import { cn } from "../ui/utils";
@@ -56,7 +57,13 @@ const navigationItems = [
         // imgSelected: learningSupportSelected,
         link: '/university',
       },
-       {
+      {
+        navItem: 'Users',
+        id: 'users',
+        img: AccountCircle,
+        link: '/users',
+      },
+      {
         navItem: 'Settings',
         id: 'settings',
         // show: false,
@@ -64,7 +71,7 @@ const navigationItems = [
         // imgSelected: learningSupportSelected,
         link: '/setting',
       },
-       {
+      {
         navItem: 'Help',
         id: 'help',
         // show: false,
@@ -105,11 +112,14 @@ export function Sidebar({ isCollapsed, onToggle, className }) {
     }
   }, [location]);
   return (
-    <aside className={cn(
-      "bg-sidebar border-r border-sidebar-border transition-all duration-300 ease-in-out flex flex-col",
-      isCollapsed ? "w-16" : "w-64",
-      className
-    )}>
+    <aside
+      style={{ background: 'linear-gradient(135deg, #EF5350 0%, #fff 100%)' }}
+      className={cn(
+        "border-r border-sidebar-border transition-all duration-300 ease-in-out flex flex-col",
+        isCollapsed ? "w-16" : "w-64",
+        className
+      )}
+    >
       {/* Sidebar Header */}
       <div className="h-16 flex items-center justify-between px-4 border-b border-sidebar-border">
         {!isCollapsed && (
@@ -137,17 +147,17 @@ export function Sidebar({ isCollapsed, onToggle, className }) {
 
       {/* Navigation */}
       <nav className="flex-1 overflow-y-auto py-4">
-        <ul className="space-y-1 px-2">
+        <ul className="space-y-3 px-2">
           {navigationItems.map((item) => {
             const IconComponent = item.img;
             return (
               <Link to={item?.link}>
-                <li key={item?.navItem}>
+                <li key={item?.navItem} className='my-2'>
                 <Button
                   variant="ghost"
                   className={cn(
-                    "w-full justify-start gap-3 h-10 px-3 text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground",
-                    activeMenu === item.id && "bg-sidebar-primary text-sidebar-primary-foreground hover:bg-sidebar-primary hover:text-sidebar-primary-foreground",
+                    "w-full justify-start gap-3 h-10 px-3 !text-[14px] font-normal py-2 text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground !rounded-[8px]",
+                    activeMenu === item.id && "bg-sidebar-primary text-sidebar-primary-foreground hover:bg-sidebar-primary hover:text-sidebar-primary-foreground !rounded-[8px]",
                     isCollapsed && "justify-center"
                   )}
                 >

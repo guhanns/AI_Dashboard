@@ -1,0 +1,59 @@
+.login-root {
+  height: 90vh;
+  background: #fff;
+  overflow: hidden;
+}
+.login-gradient {
+  background: linear-gradient(135deg, #dd0e3a 0%, #ef5350 60%, #fff 100%);
+  min-height: 90vh;
+  padding: 0;
+}
+.login-gradient-content {
+  max-width: 400px;
+}
+.login-form-col {
+  background: #fff;
+  min-height: 90vh;
+  padding: 0;
+}
+.login-form-box {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem;
+  margin: 2rem 0;
+}
+.login-signin-btn {
+  background: #dd0e3a !important;
+  border-color: #dd0e3a !important;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(221,14,58,0.08);
+  transition: background 0.2s;
+}
+.login-signin-btn:hover {
+  background: #b90c31 !important;
+}
+.login-google-btn {
+  border-radius: 8px;
+  font-weight: 500;
+  color: #222 !important;
+  border: 1px solid #eee !important;
+  background: #fff !important;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.login-google-btn:hover {
+  box-shadow: 0 2px 8px rgba(221,14,58,0.10);
+}
+.login-forgot {
+  color: #dd0e3a;
+  font-size: 0.95rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+.login-forgot:hover {
+  text-decoration: underline;
+}

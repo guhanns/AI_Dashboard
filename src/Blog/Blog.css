@@ -1,0 +1,65 @@
+.blog-container {
+  padding: 1.5rem;
+}
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.blog-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+.blog-add-btn {
+  background-color: #2563eb !important;
+  border-color: #2563eb !important;
+  color: #fff !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  transition: background 0.15s;
+}
+.blog-add-btn:hover {
+  background-color: #1d4ed8 !important;
+}
+.blog-table-container {
+  overflow-x: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  background: #fff;
+}
+.blog-table {
+  min-width: 100%;
+  font-size: 0.875rem;
+  color: #334155;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+.blog-table thead {
+  background: #2563eb;
+  color: #fff;
+}
+.blog-table tbody tr:hover {
+  background: #eff6ff;
+  transition: background 0.2s;
+}
+.blog-status {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: #bbf7d0;
+  color: #166534;
+  border-radius: 0.375rem;
+}
+.blog-action-btn {
+  margin-right: 0.5rem;
+}
+.blog-edit-btn {
+  background: #3b82f6 !important;
+  border-color: #3b82f6 !important;
+}
+.blog-delete-btn {
+  background: #ef4444 !important;
+  border-color: #ef4444 !important;
+}

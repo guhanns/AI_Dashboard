@@ -1,0 +1,105 @@
+.user-view-container {
+  padding: 2rem 1.5rem;
+}
+.user-view-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(221,14,58,0.06);
+  padding: 2rem 2rem 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+.user-profile-img {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffe5ea;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+}
+.user-profile-details {
+  flex: 1 1 0%;
+  min-width: 220px;
+}
+.user-name {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #232946;
+  margin-bottom: 0.2rem;
+}
+.user-email {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.2rem;
+}
+.user-status {
+  font-size: 0.98rem;
+  color: #dd0e3a;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+.user-completion {
+  margin-top: 0.5rem;
+  font-size: 0.98rem;
+}
+.user-profile-meta {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  align-items: flex-start;
+  min-width: 220px;
+}
+.user-meta-item {
+  text-align: center;
+  min-width: 110px;
+}
+.user-meta-label {
+  font-size: 0.95rem;
+  color: #888;
+  margin-top: 0.2rem;
+}
+.user-meta-value {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #232946;
+  margin-top: 0.1rem;
+}
+.user-view-tabs {
+  border-bottom: none !important;
+  margin-bottom: 1.5rem;
+}
+.user-view-tab {
+  color: #dd0e3a !important;
+  background: transparent !important;
+  border: none !important;
+  margin-right: 12px;
+  font-weight: 500;
+  border-radius: 0 !important;
+  font-size: 1rem;
+  transition: color 0.2s;
+  padding: 0.7rem 1.2rem 0.7rem 0.7rem;
+  display: flex;
+  align-items: center;
+}
+.user-view-tab.active {
+  color: #dd0e3a !important;
+  font-weight: 700;
+  background: transparent !important;
+  border: none !important;
+  text-decoration: underline;
+}
+.user-view-tab-content {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(221,14,58,0.04);
+  padding: 2rem 1.5rem;
+}
+.user-tab-section {
+  font-size: 1.08rem;
+  color: #232946;
+  min-height: 120px;
+}
